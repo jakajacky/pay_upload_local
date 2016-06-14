@@ -1,14 +1,5 @@
 # coding=utf-8
 
-"""
-    * User:  answer.huang
-    * Email: aihoo91@gmail.com
-    * Date:  15/3/31
-    * Time:  18:33
-    * Blog:  answerhuang.duapp.com
-    """
-
-
 import time
 import urllib2
 import time
@@ -24,9 +15,9 @@ import json
 #蒲公英应用上传地址
 url = 'http://www.pgyer.com/apiv1/app/upload'
 #蒲公英提供的 用户Key
-uKey = '8f9d205b1aaee0ff18353cc091c4908d'
+uKey = '*****'
 #蒲公英提供的 API Key
-_api_key = 'ca1cbd6c6323f55e3d2364287dcd49e6'
+_api_key = '*****'
 #安装应用时需要输入的密码，这个可不填
 installPassword = '111111'
 
@@ -90,7 +81,7 @@ def send_Email(json_result):
     appBuildVersion = json_result['data']['appBuildVersion']
     appShortcutUrl = json_result['data']['appShortcutUrl']
     #邮件接受者
-    mail_receiver = ['jack_zhangx@126.com']
+    mail_receiver = ['******@***.com']
                         
     #根据不同邮箱配置 host，user，和pwd
     mail_host = 'smtp.exmail.qq.com'
